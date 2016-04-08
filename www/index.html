@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="starter">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -16,36 +16,15 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
   </head>
-  <body ng-controller="indexController">
-    <ion-side-menus>
-      <ion-side-menu-content>
-        <ion-header-bar class="bar bar-header bar-calm">
-          <div class="buttons">
-            <button class="button icon button-clear ion-navicon-round"  ng-click="openSideMenu()"></button>
-          </div> 
-          <h1 class="title">Ionic Sample</h1>
-        </ion-header-bar>
-        <ion-content>
-            <div class="card">
-              <div class="item item-divider">
-                <center>Welcome to the Ionic Sample!</center>
-              </div>
-              <div class="item item-text-wrap">
-                This project is a simple Ionic project that contains a documentation of the principal components of Ionic and to do some tests. 
-              </div>
-            </div>
-          </ion-content>
-      </ion-side-menu-content>
+  <body ng-app="starter">
 
-      <ion-side-menu side="left">
-        <ion-list>
-          <ion-item>toDo</ion-item>
-        </ion-list>
-      </ion-side-menu>
-    </ion-side-menus>
+    <ion-nav-view></ion-nav-view>
+
     <div class="bar bar-footer bar-light">
-      <div class="title">Developed by Luiz P. Baldi</div>
+      <div class="title">This is a simple footer example</div>
     </div>
+    
   </body>
 </html>

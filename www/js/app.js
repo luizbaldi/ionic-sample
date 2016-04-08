@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic'])
+angular.module('starter', ['ionic', 'starter.controllers'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -23,8 +23,51 @@ angular.module('starter', ['ionic'])
   });
 })
 
-.controller('indexController', function($scope, $ionicSideMenuDelegate) {
-  $scope.openSideMenu = function() {
-    $ionicSideMenuDelegate.toggleLeft();
-  }
-})
+.config(function($stateProvider, $urlRouterProvider) {
+  $stateProvider
+
+  .state('app', {
+    url: '/app',
+    abstract: true,
+    templateUrl: 'templates/menu.html',
+    controller: 'indexController'
+  })
+  
+  .state('app.teste', {
+    url: '/teste',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/teste.html'
+      }
+    }
+  })
+
+  .state('app.form', {
+    url: '/form',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/form.html'
+      }
+    }
+  })
+
+  .state('app.buttons', {
+    url: '/buttons',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/buttons.html'
+      }
+    }
+  })
+
+  .state('app.list', {
+    url: '/list',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/list.html'
+      }
+    }
+  })
+
+  $urlRouterProvider.otherwise('/app/teste');
+});

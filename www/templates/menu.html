@@ -1,0 +1,39 @@
+<ion-side-menus ng-controller="indexController">
+  <ion-side-menu-content>
+    <ion-header-bar class="bar bar-header bar-dark">
+      <div class="buttons">
+        <button class="button icon button-clear ion-navicon-round"  ng-click="openSideMenu()"></button>
+      </div> 
+      <h1 class="title">Ionic Sample</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div class="card">
+          <div class="item item-divider">
+            <center>Welcome to the Ionic Sample!</center>
+          </div>
+          <div class="item item-text-wrap">
+            This project is a simple Ionic project that contains a documentation of the principal components of Ionic and to do some tests. 
+          </div>
+        </div>
+      </ion-content>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">Navigation Menu</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close href="#/app/buttons.html">
+          Buttons
+        </ion-item>
+        <ion-item menu-close href="#/app/list.html">
+          List
+        </ion-item>
+        <ion-item menu-close href="#/app/form.html">
+          Form
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
