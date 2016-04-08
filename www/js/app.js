@@ -30,9 +30,18 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: '/app',
     abstract: true,
     templateUrl: 'templates/menu.html',
-    controller: 'indexController'
+    controller: 'AppCtrl'
   })
   
+  .state('app.home', {
+    url: '/home',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/home.html'
+      }
+    }
+  })
+
   .state('app.teste', {
     url: '/teste',
     views: {
@@ -69,5 +78,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  $urlRouterProvider.otherwise('/app/teste');
+  .state('app.toggle', {
+    url: '/toggle',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/toggle.html'
+      }
+    }
+  });
+
+  $urlRouterProvider.otherwise('/app/home');
 });

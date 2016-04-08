@@ -1,13 +1,16 @@
-<ion-side-menus ng-controller="indexController">
+<ion-side-menus enable-menu-with-back-views="false">
   <ion-side-menu-content>
-    <ion-header-bar class="bar bar-header bar-dark">
-      <div class="buttons">
-        <button class="button icon button-clear ion-navicon-round"  ng-click="openSideMenu()"></button>
-      </div> 
-      <h1 class="title">Ionic Sample</h1>
-    </ion-header-bar>
-    <ion-content>
-        <div class="card">
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent">
+      <div class="card">
           <div class="item item-divider">
             <center>Welcome to the Ionic Sample!</center>
           </div>
@@ -15,23 +18,29 @@
             This project is a simple Ionic project that contains a documentation of the principal components of Ionic and to do some tests. 
           </div>
         </div>
-      </ion-content>
+    </ion-nav-view>
   </ion-side-menu-content>
 
-  <ion-side-menu side="left">
+<ion-side-menu side="left">
     <ion-header-bar class="bar-stable">
       <h1 class="title">Navigation Menu</h1>
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item menu-close href="#/app/buttons.html">
+        <ion-item menu-close href="#/app/home">
+          Home
+        </ion-item>
+        <ion-item menu-close href="#/app/buttons">
           Buttons
         </ion-item>
-        <ion-item menu-close href="#/app/list.html">
+        <ion-item menu-close href="#/app/list">
           List
         </ion-item>
-        <ion-item menu-close href="#/app/form.html">
+        <ion-item menu-close href="#/app/form">
           Form
+        </ion-item>
+        <ion-item menu-close href="#/app/toggle">
+          Toggle
         </ion-item>
       </ion-list>
     </ion-content>
