@@ -1,10 +1,16 @@
 <ion-view view-title="Toggle">
   <ion-content>
-    <label class="toggle">
-	   <input type="checkbox">
-	   <div class="track">
-	     <div class="handle"></div>
-	   </div>
-	</label>
+    <div class="list">
+        
+        <div class="item item-divider"> 
+          Settings
+        </div>
+        
+        <ion-toggle ng-repeat="item in settingsList"
+                    ng-model="item.checked" 
+                    ng-checked="item.checked">
+          {{ item.text }}
+        </ion-toggle>
+
   </ion-content>
 </ion-view>
