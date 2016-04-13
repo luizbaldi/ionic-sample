@@ -60,11 +60,65 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.buttons', {
-    url: '/buttons',
+  .state('app.buttonsBasic', {
+    url: '/buttonsBasic',
     views: {
       'menuContent': {
-        templateUrl: 'templates/buttons.html'
+        templateUrl: 'templates/buttons/basic.html'
+      }
+    }
+  })
+
+  .state('app.buttonsBlock', {
+    url: '/buttonsBlock',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/buttons/block.html'
+      }
+    }
+  })
+
+  .state('app.buttonsIcons', {
+    url: '/buttonsIcons',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/buttons/icons.html'
+      }
+    }
+  })
+
+  .state('app.buttonsFullWidth', {
+    url: '/buttonsFullWidth',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/buttons/full-width.html'
+      }
+    }
+  })
+
+  .state('app.buttonsOutlined', {
+    url: '/buttonsOutlined',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/buttons/outlined.html'
+      }
+    }
+  })
+
+  .state('app.buttonsClear', {
+    url: '/buttonsClear',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/buttons/clear.html'
+      }
+    }
+  })
+
+  .state('app.buttonsBar', {
+    url: '/buttonsBar',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/buttons/bar.html'
       }
     }
   })
