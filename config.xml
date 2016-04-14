@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.sampleionic163981" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>sampleIonic</name>
+  <name>Ionic Sample</name>
   <description>
         This project is a simple Ionic project that contains a documentation of the principal components of Ionic. The purpose of building this project is to learn and study about the framework.  
     </description>
   <author email="baldilp@gmail.com" href="https://br.linkedin.com/in/luizbaldi">
       Luiz P. Baldi
+      Lucas Rodrigues
     </author>
   <content src="index.html"/>
   <access origin="*"/>
