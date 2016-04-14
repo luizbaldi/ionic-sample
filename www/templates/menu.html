@@ -31,6 +31,8 @@
     </ion-header-bar>
     <ion-content>
       <div ng-switch on="selection" class="slide-right-left">
+
+        <!-- Menu -->
         <div ng-switch-default>
           <ion-list>
             <ion-item menu-close href="#/app/home">
@@ -39,7 +41,7 @@
             <ion-item ng-click="openSub('menuButtons')">
               Buttons
             </ion-item>
-            <ion-item menu-close href="#/app/list">
+            <ion-item ng-click="openSub('menuList')">
               List
             </ion-item>
             <ion-item menu-close href="#/app/form">
@@ -50,7 +52,8 @@
             </ion-item>
           </ion-list>
         </div>
-        <!-- /Default list -->
+
+        <!-- Buttons Submenu -->
         <div ng-switch-when="menuButtons">
           <ion-list>
             <ion-item menu-close href="#/app/buttonsBasic">
@@ -73,6 +76,33 @@
             </ion-item>
             <ion-item menu-close href="#/app/buttonsBar">
               Bar Buttons
+            </ion-item>
+          </ion-list>
+        </div>
+
+        <!-- List Submenu -->
+        <div ng-switch-when="menuList">
+          <ion-list>
+            <ion-item menu-close href="#/app/listBasic">
+              Basic List
+            </ion-item>
+            <ion-item menu-close href="#/app/listAvatars">
+              Avatars List
+            </ion-item>
+            <ion-item menu-close href="#/app/listButtons">
+              Buttons List
+            </ion-item>
+            <ion-item menu-close href="#/app/listDivider">
+              Divider List
+            </ion-item>
+            <ion-item menu-close href="#/app/listIcons">
+              Icons List
+            </ion-item>
+            <ion-item menu-close href="#/app/listInset">
+              Inset Lists
+            </ion-item>
+            <ion-item menu-close href="#/app/listThumbnails">
+              Thumbnails List
             </ion-item>
           </ion-list>
         </div>
