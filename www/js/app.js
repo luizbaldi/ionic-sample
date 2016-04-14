@@ -42,24 +42,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.teste', {
-    url: '/teste',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/teste.html'
-      }
-    }
-  })
-
-  .state('app.form', {
-    url: '/form',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/form.html'
-      }
-    }
-  })
-
   .state('app.buttonsBasic', {
     url: '/buttonsBasic',
     views: {
@@ -123,11 +105,74 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.list', {
-    url: '/list',
+  .state('app.listBasic', {
+    url: '/listBasic',
     views: {
       'menuContent': {
-        templateUrl: 'templates/list.html'
+        templateUrl: 'templates/list/basic.html'
+      }
+    }
+  })
+
+  .state('app.listAvatars', {
+    url: '/listAvatars',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/list/avatars.html'
+      }
+    }
+  })
+
+  .state('app.listButtons', {
+    url: '/listButtons',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/list/buttons.html'
+      }
+    }
+  })
+
+  .state('app.listDivider', {
+    url: '/listDivider',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/list/divider.html'
+      }
+    }
+  })
+
+  .state('app.listIcons', {
+    url: '/listIcons',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/list/icons.html'
+      }
+    }
+  })
+
+  .state('app.listInset', {
+    url: '/listInset',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/list/inset.html'
+      }
+    }
+  })
+
+  .state('app.listThumbnails', {
+    url: '/listThumbnails',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/list/thumbnails.html'
+      }
+    }
+  })
+
+  .state('app.form', {
+    url: '/form',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/form.html'
       }
     }
   })
