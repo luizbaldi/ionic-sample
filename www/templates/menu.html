@@ -11,13 +11,13 @@
     </ion-nav-bar>
     <ion-nav-view name="menuContent">
       <div class="card">
-          <div class="item item-divider">
-            <center>Welcome to the Ionic Sample!</center>
-          </div>
-          <div class="item item-text-wrap">
-            This project is a simple Ionic project that contains a documentation of the principal components of Ionic and to do some tests.
-          </div>
+        <div class="item item-divider">
+          <center>Welcome to the Ionic Sample!</center>
         </div>
+        <div class="item item-text-wrap">
+          This project is a simple Ionic project that contains a documentation of the principal components of Ionic and to do some tests.
+        </div>
+      </div>
     </ion-nav-view>
   </ion-side-menu-content>
 
@@ -49,6 +49,24 @@
             </ion-item>
             <ion-item menu-close href="#/app/toggle">
               Toggle
+            </ion-item>
+            <ion-item menu-close href="#/app/checkbox">
+              Checkbox
+            </ion-item>
+            <ion-item menu-close href="#/app/radioButton">
+              Radio Buttons
+            </ion-item>
+            <ion-item menu-close href="#/app/range">
+              Range
+            </ion-item>
+            <ion-item menu-close href="#/app/select">
+              Select
+            </ion-item>
+            <ion-item menu-close ng-click="openSub('menuTabs')">
+              Tabs
+            </ion-item>
+            <ion-item menu-close ng-click="openSub('menuGrid')">
+              Grid
             </ion-item>
           </ion-list>
         </div>
@@ -106,6 +124,45 @@
             </ion-item>
           </ion-list>
         </div>
+
+        <!--Tabs Submenu -->
+        <div ng-switch-when="menuTabs">
+          <ion-list>
+            <ion-item menu-close href="#/app/tabsIconOnly">
+              Icon Only
+            </ion-item>
+            <ion-item menu-close href="#/app/tabsLeftIcon">
+              Left Icon
+            </ion-item>
+            <ion-item menu-close href="#/app/tabsStripedIcon">
+              Stripped Style
+            </ion-item>
+            <ion-item menu-close href="#/app/tabsTopIcon">
+              Top Icon
+            </ion-item>
+          </ion-list>
+        </div>
+
+        <!--Grid Submenu -->
+        <div ng-switch-when="menuGrid">
+          <ion-list>
+            <ion-item menu-close href="#/app/gridEvenColumns">
+              Evenly Spaced Columns
+            </ion-item>
+            <ion-item menu-close href="#/app/gridExplicitColumn">
+              Excplicit Column Sizes
+            </ion-item>
+            <ion-item menu-close href="#/app/gridOffsetColumn">
+              Offset Columns 
+            </ion-item>
+            <ion-item menu-close href="#/app/gridResponsive">
+              Responsive Grid
+            </ion-item>
+            <ion-item menu-close href="#/app/gridVerticallyAlligned">
+              Vertically Alligned
+            </ion-item>
+        </div>
+
       </div>
     </ion-content>
   </ion-side-menu>

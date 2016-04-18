@@ -42,6 +42,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  //-- Buttons Menu
   .state('app.buttonsBasic', {
     url: '/buttonsBasic',
     views: {
@@ -105,6 +106,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  //-- List Menu
   .state('app.listBasic', {
     url: '/listBasic',
     views: {
@@ -172,7 +174,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: '/form',
     views: {
       'menuContent': {
-        templateUrl: 'templates/form.html'
+        templateUrl: 'templates/form/form.html'
       }
     }
   })
@@ -181,7 +183,126 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: '/toggle',
     views: {
       'menuContent': {
-        templateUrl: 'templates/toggle.html'
+        templateUrl: 'templates/toggle/toggle.html'
+      }
+    }
+  })
+
+  .state('app.checkbox', {
+    url: '/checkbox',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/checkbox/checkbox.html'
+      }
+    }
+  })
+
+  .state('app.radioButton', {
+    url: '/radioButton',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/radio-buttom/radio-buttom.html'
+      }
+    }
+  })
+
+  .state('app.range', {
+    url: '/range',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/range/range.html'
+      }
+    }
+  })
+
+  .state('app.select', {
+    url: '/select',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/select/select.html'
+      }
+    }
+  })
+
+  //-- Tabs Menu
+  .state('app.tabsIconOnly', {
+    url: '/tabsIconOnly',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/tabs/icon-only.html'
+      }
+    }
+  })
+
+  .state('app.tabsLeftIcon', {
+    url: '/tabsLeftIcon',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/tabs/left-icon.html'
+      }
+    }
+  })
+
+  .state('app.tabsStripedIcon', {
+    url: '/tabsStripedIcon',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/tabs/striped-icon.html'
+      }
+    }
+  })
+
+  .state('app.tabsTopIcon', {
+    url: '/tabsTopIcon',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/tabs/top-icon.html'
+      }
+    }
+  })
+
+  //-- Grid Menu
+  .state('app.gridEvenColumns', {
+    url: '/gridEvenColumns',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/grid/even-columns.html'
+      }
+    }
+  })
+
+  .state('app.gridExplicitColumn', {
+    url: '/gridExplicitColumn',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/grid/explicit-column-sizes.html'
+      }
+    }
+  })
+
+  .state('app.gridOffsetColumn', {
+    url: '/gridOffsetColumn',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/grid/explicit-column-sizes.html'
+      }
+    }
+  })
+
+  .state('app.gridResponsive', {
+    url: '/gridResponsive',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/grid/responsive.html'
+      }
+    }
+  })
+
+  .state('app.gridVerticallyAlligned', {
+    url: '/gridVerticallyAlligned',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/grid/vertically-aligned.html'
       }
     }
   });
